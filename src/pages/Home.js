@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
 
 const Home = () => {
+  const [inputText, setInputText] = useState("");
   return (
     <div>
       <div className="header">
@@ -9,9 +10,12 @@ const Home = () => {
         <input
           type="text"
           placeholder="taper le nom d'un aliment (in english)"
+          onChange={(e) => setInputText(e.target.value)}
+          value={inputText}
         />
       </div>
-      <Card />
+
+      <Card inputText={inputText} />
     </div>
   );
 };

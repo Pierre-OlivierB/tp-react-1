@@ -30,6 +30,7 @@ input {
 .card {
   max-width: 300px;
   padding: 10px;
+  margin: 25px;
   background-color: antiquewhite;
   border-radius: 5px;
 }
@@ -49,4 +50,6 @@ input {
   justify-content: space-around;
   margin-top: 200px;
   align-items: baseline;
+  max-width: 1500px;
+  flex-flow: wrap;
 }
